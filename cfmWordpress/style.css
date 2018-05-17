@@ -1,0 +1,816 @@
+﻿/*
+ Theme Name:   cfm Distributors, Inc.
+ Description:  cfm Distributors, Inc. Theme
+ Developers and contributors: Ryan Valizan
+ Author URI:   http://www.cfmdistributors.com
+ Template:     twentytwelve
+ Version:      1.0.0
+ Tags:         two-columns, right-sidebar, responsive-layout, accessibility-ready
+ Text Domain:  cfm-Distributors
+*/
+
+@import url("../twentytwelve/style.css");
+@import url("css/mainNav.css");
+@import url("css/mainNavTop.css");
+/******************************************
+
+cfm Distributors, Inc. all rights reserved
+
+*******************************************/
+
+/*------------------- 
+
+body adjustments 
+
+ -------------------*/
+@font-face {
+    font-family: 'LucidaBright';
+    src: url('fonts/LucidaBrightItalic.eot?#iefix') format('embedded-opentype'), /* EOT file for IE */
+    url('fonts/LucidaBrightItalic.ttf') format('truetype');
+}
+
+body .site {
+    margin-top: -1.571429rem;
+    clear: both;
+}
+
+.addtoany_share_save_container {
+    text-align: center;
+}
+
+body {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#7d7e7d+0,0e0e0e+100;Black+3D */
+    background: rgb(125,126,125); /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(125,126,125,1) 0%, rgba(14,14,14,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(125,126,125,1)), color-stop(100%,rgba(14,14,14,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(125,126,125,1) 0%,rgba(14,14,14,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, rgba(125,126,125,1) 0%,rgba(14,14,14,1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, rgba(125,126,125,1) 0%,rgba(14,14,14,1) 100%); /* IE10+ */
+    background: linear-gradient(to bottom, rgba(125,126,125,1) 0%,rgba(14,14,14,1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7d7e7d', endColorstr='#0e0e0e',GradientType=0 ); /* IE6-9 */
+    background-attachment: fixed;
+}
+
+/*
+html body {
+	min-height: 100%;
+}
+*/
+
+#main {
+    margin-top: 9.2em;
+}
+
+.site-header {
+    display: none;
+}
+/*
+
+ Main Nav adjustments
+  
+ -------------------*/
+
+.topNav {
+    position: fixed;
+    display: block;
+    width: 100%;
+    z-index: 600;
+    margin-top: -.5em;
+    -webkit-box-shadow: inset 0px 2px 10px 1px rgba(0,0,0,0.65);
+    -moz-box-shadow: inset 0px 2px 10px 1px rgba(0,0,0,0.65);
+    box-shadow: inset 0px 2px 10px 1px rgba(0,0,0,0.65);
+    height: 50px;
+}
+
+#topNavBox {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 0 0 0;
+    max-width: 1000px;
+}
+
+#mainNav {
+    float: left;
+    margin-left: 7em;
+    margin-top: 2em;
+}
+
+ul.dropdown li ul {
+    margin-top: .469em;
+}
+
+#mainNav li {
+    margin: 0 .2em 0 .2em;
+}
+
+#mainNav, div.nav-menu ul {
+    border: none;
+}
+
+    #mainNav ul.nav-menu {
+        border-bottom: none;
+        border-top: none;
+    }
+
+#largeLogo {
+    margin-bottom: 0.5em;
+    width: 152px; /* 231px / 474px */
+    position: absolute;
+    z-index: 999;
+    margin-top: 1.03em;
+}
+
+    #largeLogo img {
+        max-width: 100%;
+    }
+
+#largeLogoContainer {
+    max-width: 72em;
+    margin: 0 auto;
+}
+
+#blueBar {
+    width: 100%;
+    background-repeat: repeat;
+    background-image: url(img/logobkground.png);
+    z-index: 1;
+    float: right;
+    height: 0.68em;
+    padding-top: 8em;
+    padding-bottom: 5px;
+    margin-bottom: -8em;
+    -webkit-box-shadow: 0px 4px 11px 2px rgba(200,203,206,0.63);
+    -moz-box-shadow: 0px 4px 11px 2px rgba(200,203,206,0.63);
+    box-shadow: 0px 4px 11px 2px rgba(200,203,206,0.63);
+    border-radius: 0px 0px 7px 7px;
+    -moz-border-radius: 0px 0px 7px 7px;
+    -webkit-border-radius: 0px 0px 7px 7px;
+    border: 0px solid #000000;
+}
+
+    #blueBar .headerQuotes {
+        color: #FFF;
+        font-family: LucidaBright;
+        font-size: 22px;
+        font-weight: bolder;
+        text-shadow: 2px 2px 3px #4c4d4e;
+        position: relative;
+        margin-left: 25%;
+        top: -60px;
+    }
+
+#smallLogo {
+    margin-bottom: 0.5em;
+    margin-left: 1em; /* 12px / 474px */
+    width: 4em; /* 231px / 474px */
+    margin-top: 14px;
+    display: inline-block;
+    float: left;
+}
+
+#tollFree {
+    float: left;
+    display: inline-block;
+    margin-top: 23px;
+    margin-left: .3em;
+}
+
+    #tollFree h3 {
+        color: #4C4D4E;
+        font-weight: bolder;
+        font-size: 14px;
+        color: #FFF;
+        font-family: LucidaBright;
+    }
+/*------------------
+eStorefront Login
+------------------*/
+#loginSlogan {
+    width: 100%;
+}
+
+    #loginSlogan h3 {
+        color: #B72E09;
+        font-family: LucidaBright;
+        font-size: 22px;
+        font-weight: bolder;
+        text-shadow: 2px 2px 3px rgba(33, 106, 255, 0.75);
+        text-align: center;
+    }
+
+/*------------------
+
+Footer menu
+
+-------------------*/
+#colophon {
+    padding-bottom: 6em;
+}
+
+#footerMenu {
+    float: left;
+}
+
+#menu-footer li {
+    float: left;
+    margin-left: .2em;
+    margin-right: .2em;
+    border-left: 1px solid #4C4D4E;
+    padding-left: .5em;
+    line-height: 1em;
+    font-size: 14px;
+}
+
+    #menu-footer li a {
+        font-family: Helvetica, Arial, sans-serif;
+        color: #444;
+    }
+
+#contactInfo {
+    vertical-align: middle;
+    float: left;
+}
+
+    #contactInfo div {
+        display: block;
+        line-height: 1em;
+        font-size: 14px;
+    }
+
+#copyright {
+    font-size: 10px;
+    font-style: italic;
+}
+
+#cfmFooter, #cfmFooter a {
+    font-size: 16px;
+    color: #0053a1;
+    font-weight: bold;
+}
+
+.noBorder {
+    border-left: none !important;
+    margin-left: 0px !important;
+    padding-left: 0px !important;
+}
+
+/*-------------------
+
+ Social Media links 
+
+ -------------------*/
+#LinkImgContainer {
+    width: 100%;
+    position: relative;
+    top: -168px;
+    height: 40px;
+    overflow: hidden;
+}
+
+#smLinkImg {
+    z-index: 30;
+    width: 16%;
+    float: right;
+    margin-top: 10px;
+    margin-right: 25px;
+}
+
+div#smLinkImg img {
+    width: 20%;
+}
+
+#smLinksTop {
+    position: relative;
+    float: right;
+    top: -160px;
+    height: 42px;
+    width: 18%;
+}
+
+    #smLinksTop h3 {
+        color: #4C4D4E;
+        font-weight: bolder;
+        color: #FFF;
+        font-family: LucidaBright;
+        font-size: 12px;
+        font-weight: bolder;
+        text-align: center;
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    #smLinksTop .tollFree {
+        top: -25px;
+        position: relative;
+        left: 15px;
+    }
+
+#headerSearch {
+    position: relative;
+    float: right;
+    top: -194px;
+    width: 100%;
+}
+
+.widget_search {
+    position: relative;
+    background: none;
+    height: 60px;
+    width: 100%;
+    float: right;
+}
+
+    .widget_search #s {
+        position: relative;
+        top: 8px;
+        width: 88%;
+    }
+
+    .widget_search .screen-reader-text {
+        display: none;
+    }
+
+    .widget_search #searchsubmit {
+        position: relative;
+        left: 76%;
+        width: 20%;
+        background: url("img/red-150x150.png") top left no-repeat;
+        border: none;
+        top: -32px;
+    }
+
+        .widget_search #searchsubmit:hover {
+            /*background: url("img/red-150x150.png") top left no-repeat;  */
+            border: none;
+        }
+
+#estoreIframe {
+    margin-left: -20px;
+    margin-right: -20px;
+    margin-top: 0px;
+    margin-bottom: -80px;
+}
+
+#traingingPopup {
+    max-height: 600px;
+    overflow: auto;
+}
+
+.chrome {
+    background: url("img/Google_Chrome_2011_Logo.png") no-repeat center;
+    height: 40px;
+    width: 150px;
+}
+
+.fireFox {
+    background: url("img/firefox.png") no-repeat center;
+    height: 40px;
+    width: 150px;
+}
+
+#browserDownload, #browserDownload p {
+    color: #000;
+    width: 105px;
+    line-height: 45px;
+    vertical-align: middle;
+    text-align: right;
+    font-size: 20px;
+}
+
+.notNow {
+    width: 125px !important;
+}
+
+#vexHeader {
+    position: relative;
+    top: -36px;
+    font-size: 18px;
+    color: #1c6aea;
+    text-align: center;
+}
+
+#ieMessage {
+    font-size: 16px;
+}
+
+#scrollToTop {
+    float: right;
+}
+/*------------------
+Spinner for Loading
+------------------*/
+.ui-dialog .ui-dialog-content.ui-dialog-spinner {
+    background: #f8f5f5 url("img/ajax-loader(1).gif") no-repeat scroll 5px 15px;
+    padding: 30px 0 0px 70px;
+    border: 2px solid #DDDDDD;
+    font-weight: 900;
+    line-height: 1em;
+    font-size: 1.1em;
+    color: #737373;
+}
+
+/*------------------- 
+
+ Contact form
+ 
+-------------------*/
+/*------------------- 
+
+ queries 
+ 
+-------------------*/
+
+@media screen and (min-width: 926px) and (max-width: 980px) {
+    .missinHeader {
+        width: 76%;
+        top: -72px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 925px) and (orientation: portrait) {
+    #smLinksTop {
+        width: 20%
+    }
+
+    #blueBar .headerQuotes {
+        margin-left: 22%;
+    }
+
+    largeLogo {
+        width: 150px; /* 231px / 474px */
+        margin-top: .03em;
+    }
+
+    #twitterMarqueeWrap {
+        margin-left: 17.4%;
+        width: 461px;
+    }
+
+    #blueBar .missionHeader {
+        width: 100%;
+        right: 22%;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 800px) {
+    #smLinksTop {
+        width: 20%
+    }
+
+    #blueBar .missionHeader {
+        width: 100%;
+        right: 21%;
+        height: 30px;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+
+    #twitterMarqueeWrap {
+        left: 18%;
+        margin-left: 0%;
+    }
+}
+
+@media screen and (max-width: 760px) {
+
+    #mainMenu > .menu-menu-container > ul > li, #mainMenu > .menu-menu-container > ul > li > a {
+        font-size: 13px;
+    }
+
+    #twitterMarqueeWrap {
+        margin-left: 1.4%;
+        width: 540px;
+    }
+
+    #smLinksTop {
+        width: 22%;
+    }
+}
+
+@media screen and (max-width: 680px) {
+
+    #mainMenu > .menu-menu-container > ul > li, #mainMenu > .menu-menu-container > ul > li > a {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .marquee {
+        width: 96%;
+    }
+
+    .topNav {
+        display: none;
+    }
+
+    #wprmenu_wrap {
+        margin-top: -40px;
+    }
+
+    #wprmenu_menu {
+        position: fixed !important;
+        /*position: relative !important;*/
+        background-color: #2E2E2E !important;
+    }
+
+    #wprmenu_bar {
+        z-index: 9999999 !important;
+    }
+
+        #wprmenu_bar .menu_title {
+            display: inline;
+            color: #FFFFFF;
+            font-size: 20px;
+            line-height: 25px;
+        }
+}
+
+@media screen and (min-width: 569px) and (max-width: 640px) {
+    #smLinksTop {
+        right: -4% !important;
+        width: 26% !important;
+        top: -137px !important;
+    }
+
+    #twitterMarqueeWrap {
+        width: 58% !important;
+        margin-left: 24% !important;
+    }
+
+    #blueBar .headerQuotes {
+        margin-left: 0% !important;
+    }
+
+    #smLinkImg {
+        margin-right: 15px;
+    }
+
+    #blueBar #missionQuote {
+        margin-left: 25% !important;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 640px) {
+    #twitterMarqueeWrap {
+        /* top: -110px; */
+        margin-left: 24%;
+        width: 59%;
+    }
+
+    #wprmenu_bar .bar_logo {
+        display: none;
+    }
+
+    #wprmenu_bar .menu_title {
+        /*margin-left: 142px;*/
+    }
+
+    #largeLogo {
+        margin-top: -34px;
+        z-index: 999;
+    }
+
+    #wprmenu_bar {
+        z-index: 9;
+    }
+
+    #blueBar {
+        padding-top: 68px;
+        padding-bottom: 0px;
+        height: 0px;
+        margin-bottom: 0px;
+    }
+
+    #stayConnected {
+        margin-top: -22px;
+    }
+
+    #smLinksTop {
+        right: 15%;
+    }
+
+    #blueBar .headerQuotes {
+        top: -65px;
+        margin-left: 27%;
+    }
+
+    #main {
+        margin-top: 15px;
+    }
+
+    #twitterMarqueeWrap {
+        /* top: -62px; */
+        margin-left: 150px;
+        width: 40%;
+        z-index: 1;
+    }
+}
+
+@media screen and (max-width: 568px) {
+
+    #wprmenu_bar .bar_logo {
+        display: none;
+    }
+
+    #stayConnected {
+        margin-left: 2px;
+    }
+
+    #tollFreeNumber {
+        left: 15px !important;
+    }
+
+    #smLinksTop img {
+        width: 50%;
+        height: 50%;
+        display: block;
+        overflow-wrap: normal;
+        line-height: 2em;
+    }
+
+    #largeLogoContainer {
+        margin-top: 9em;
+        margin-bottom: -8em;
+        display: inline-block;
+        width: 100%;
+    }
+
+    #largeLogo {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    #main {
+        margin-top: 0em;
+        padding-top: 9em;
+    }
+
+    #blueBar {
+        margin-top: -12.8em;
+        padding-bottom: 3em;
+    }
+
+        #blueBar .headerQuotes {
+            display: block;
+        }
+
+    #lLogoHolder {
+    }
+
+    #largeLogo img {
+        width: 50%;
+    }
+
+    #missionHeader {
+        margin-left: auto !important;
+        margin-right: auto !important;
+        text-align: center !important;
+        top: -36px !important;
+        position: relative !important;
+        display: block !important;
+    }
+    /* last stop here
+*/
+    #smLinksTop {
+        top: -82px;
+        right: 0px;
+        margin-right: 0px;
+        width: 80%;
+    }
+
+    #smLinkImg {
+        width: 30%;
+        margin-top: 12px;
+        margin-right: 5px;
+    }
+
+    #LinkImgContainer {
+        width: 100%;
+        top: -120px;
+        z-index: 999;
+    }
+
+    #headerSearch {
+        margin-top: 0em;
+    }
+
+    #twitterMarqueeWrap {
+        width: 92%;
+        margin-left: -3%;
+    }
+
+    #largeLogo {
+        width: 128px;
+        margin-top: -7.69em;
+    }
+
+    /* sure broekn zone end */
+    #menu_titleSmall {
+        display: inline;
+        color: #000;
+    }
+
+
+
+    #smLinksTop img {
+        display: inline-block;
+        line-height: 1.5em;
+    }
+
+    #wprmenu_menu .right {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 400px) and (max-width: 480px) {
+    #smLinksTop {
+        width: 60% !important;
+    }
+
+    #smLinkImg {
+        margin-top: 8px !important;
+    }
+
+    #largeLogo {
+        width: 210px !important;
+    }
+
+    #missionHeader {
+        margin-right: 0px !important;
+        margin-left: 80px !important;
+        text-align: center !important;
+    }
+}
+
+@media screen and (max-width: 479px) {
+    #twitterMarqueeWrap {
+        width: 100%;
+        margin-left: 0%;
+        top: 44px;
+    }
+
+    #blueBar .headerQuotes {
+        margin-left: 0%;
+    }
+
+    #blueBar #missionQuote {
+        top: -20px;
+        left: 0%;
+        margin-left: 0%;
+        text-align: center;
+        width: 100%;
+    }
+
+    #largeLogo {
+        margin-top: -8.69em;
+    }
+
+    #smLinkImg {
+        width: 35%;
+        margin-top: 9px;
+    }
+
+    #smLinksTop {
+        top: -149px;
+        right: 36%;
+        display: inherit;
+        width: initial;
+    }
+
+    #LinkImgContainer {
+        top: -185px;
+    }
+}
+
+@media screen and (min-width: 568px) and (max-width: 568px) {
+    #smLinksTop {
+        top: -80px;
+        width: 55%;
+    }
+
+    #smLinkImg {
+        margin-top: 6px;
+    }
+
+    #largeLogo img {
+        width: 90%;
+    }
+}
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    #blueBar .headerQuotes {
+        top: -23px;
+    }
+
+    #twitterMarqueeWrap {
+        top: -54px;
+    }
+
+    #blueBar #missionQuote {
+        top: -66px;
+    }
+
+    #copyright {
+        padding-right: 1px;
+    }
+}

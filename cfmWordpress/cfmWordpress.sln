@@ -9,6 +9,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "js", "js", "{B024EAD2-A953-
 		navMenu.js = navMenu.js
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "css", "css", "{29816445-7E90-4A68-BEFE-EFC967847D7A}"
+	ProjectSection(SolutionItems) = preProject
+		animationCss.css = animationCss.css
+		mainNav.css = mainNav.css
+		style.css = style.css
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
